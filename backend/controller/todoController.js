@@ -26,7 +26,7 @@ const updateTodo=async(req,res)=>{
 const deleteTodo=async(req,res)=>{
     try {
         const {_id,text}=req.body
-    const result= await Todo.findByIdAndDelete(_id,text);
+    const result= await Todo.findByIdAndDelete(_id);
     res.send("delete successfully")
     } catch (error) {
         console.log(error);
