@@ -10,7 +10,7 @@ const App = () => {
   const [isUpdating,setIsUpdating]=useState(false)
   const [todoId,setTodoId]=useState(false)
 
-  console.log(todo);
+  console.log(todo)
   const updatemode=(id,text)=>{
     setText(text)
     setTodoId(id)
